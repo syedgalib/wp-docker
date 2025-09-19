@@ -6,11 +6,17 @@ help: ## Show this help message
 	@echo "==============================="
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "\033[36m%-15s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
+build: ## Build all services
+	docker-compose build
+
 up: ## Start all services in development mode
 	docker-compose up
 
 up-d: ## Start all services in background (detached mode)
 	docker-compose up -d
+
+php-shell: ## Access PHP container shell
+	docker-compose exec php bash
 
 node-shell: ## Access Node container shell
 	docker-compose exec node bash
