@@ -6,7 +6,7 @@ services:
       - ./public:/var/www/html
 
   php:
-    build: ./docker/php
+    build: ./docker/php-7.4-fpm
     restart: always
     volumes:
       - ./public:/var/www/html
