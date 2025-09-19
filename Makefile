@@ -36,10 +36,17 @@ restart: ## Restart all services
 status: ## Show status of all services
 	docker-compose ps
 
-setup: ## Initial setup - copy environment file
+setup: ## Initial Setup
 	@if [ ! -f .env ]; then \
 		cp .env.example .env; \
 		echo "✅ Created .env file"; \
 	else \
 		echo "⚠️  .env file already exists"; \
+	fi
+
+	@if [ ! -f public/wp-config.php ]; then \
+		cp public/wp-config-docker.php public/wp-config.php; \
+		echo "✅ Created wp-config.php file"; \
+	else \
+		echo "⚠️  wp-config.php file already exists"; \
 	fi
