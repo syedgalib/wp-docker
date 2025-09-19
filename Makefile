@@ -36,7 +36,7 @@ restart: ## Restart all services
 status: ## Show status of all services
 	docker-compose ps
 
-setup: ## Initial Setup
+env: ## Create .env file
 	@if [ ! -f .env ]; then \
 		cp .env.example .env; \
 		echo "✅ Created .env file"; \
@@ -44,6 +44,7 @@ setup: ## Initial Setup
 		echo "⚠️  .env file already exists"; \
 	fi
 
+wp-config: ## Create wp-config.php file
 	@if [ ! -f public/wp-config.php ]; then \
 		cp public/wp-config-docker.php public/wp-config.php; \
 		echo "✅ Created wp-config.php file"; \
