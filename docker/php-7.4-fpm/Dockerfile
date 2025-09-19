@@ -33,6 +33,6 @@ RUN touch /var/log/msmtp.log \
  && chmod 644 /var/log/msmtp.log
 
 # Ensure PHP-FPM uses msmtp for mail() with envelope sender
-RUN echo "sendmail_path = /usr/bin/msmtp -t -f no-reply@example.com" > /usr/local/etc/php/conf.d/sendmail.ini
+RUN echo "sendmail_path = /usr/bin/msmtp -t -f no-reply@wp-admin.com" > /usr/local/etc/php/conf.d/sendmail.ini
 
 WORKDIR /var/www/html
