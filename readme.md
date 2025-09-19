@@ -34,3 +34,8 @@ make wp-config
 ```sh
 make node-shell
 ```
+
+### Access the applications
+- Web: http://localhost:80
+- PHP My Admin: http://localhost:8080
+- Mail: http://localhost:8025
