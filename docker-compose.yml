@@ -45,7 +45,7 @@ services:
       WORDPRESS_DEBUG: false
 
   site:
-    image: nginx:latest
+    image: nginx:alpine
     restart: always
     ports:
       - "$SERVER_PORT:80"
