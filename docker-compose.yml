@@ -1,6 +1,6 @@
 services:
   wordpress:
-    image: wordpress:latest
+    image: wordpress:fpm-alpine
     restart: always
     volumes:
       - ./public:/var/www/html
