@@ -56,7 +56,7 @@ services:
       - php
 
   node:
-    image: node:latest
+    image: node:alpine
     restart: always
     volumes:
       - ./public:/var/www/html

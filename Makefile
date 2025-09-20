@@ -19,7 +19,7 @@ php-shell: ## Access PHP container shell
 	docker-compose exec php bash
 
 node-shell: ## Access Node container shell
-	docker-compose exec node bash
+	docker-compose exec node sh
 
 down: ## Stop all services
 	docker-compose down
