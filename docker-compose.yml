@@ -56,7 +56,7 @@ services:
       - php
 
   node:
-    image: node:alpine
+    build: ./docker/node
     restart: always
     volumes:
       - ./public:/var/www/html
