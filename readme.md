@@ -20,7 +20,12 @@ PHP_MY_ADMIN_PORT=8080
 MAIL_WEB_PORT=8025
 ```
 
-### Start the docker
+### Build the docker services
+```sh
+make build
+```
+
+### Start the docker services
 ```sh
 make up
 ```
