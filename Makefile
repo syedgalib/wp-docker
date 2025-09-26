@@ -15,11 +15,8 @@ up: ## Start all services in development mode
 up-d: ## Start all services in background (detached mode)
 	docker-compose up -d
 
-php-shell: ## Access PHP container shell
-	docker-compose exec php bash
-
-node-shell: ## Access Node container shell
-	docker-compose exec node sh
+app-shell: ## Access app container shell
+	docker-compose exec app bash
 
 down: ## Stop all services
 	docker-compose down

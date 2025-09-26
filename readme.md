@@ -35,9 +35,9 @@ make up
 make wp-config
 ```
 
-### Access the Node container shell
+### Access the app container shell
 ```sh
-make node-shell
+make app-shell
 ```
 
 ### Access the applications
