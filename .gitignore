@@ -1,5 +1,3 @@
 public
 .DS_Store
 .env
-logs/php/*
-!logs/php/.gitkeep
