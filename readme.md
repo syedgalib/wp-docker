@@ -1,8 +1,8 @@
 ## Configuration
 - PHP: 7.4
 - MySQL: 8.0
-- PhpMyAdmin: 22.19.0
-- Node: latest
+- PhpMyAdmin: latest
+- Node: 22.19.0
 - Server: NGINX
 - Mailpit: latest
 
